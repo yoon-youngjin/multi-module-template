@@ -1,0 +1,9 @@
+# 로깅 관련 프로퍼티를 관리하는 파일
+
+spring:
+  sleuth:
+    trace-id128: true
+    sampler:
+      probability: 1.0
+
+logging.config: classpath:logback/logback-${spring.profiles.active}.xml
