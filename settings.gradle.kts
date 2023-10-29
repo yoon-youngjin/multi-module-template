@@ -2,6 +2,7 @@ rootProject.name = "multi-module-template"
 
 include(
     "multi-module-template-api",
+    "domain",
     "support:logging", // 로깅(sleuth, ...)에 대한 의존성이 여러 모듈에 파편화됨을 방지하기 위해 로깅 모듈을 추가한다
     "storage:db-core",
 )
